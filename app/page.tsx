@@ -4,10 +4,12 @@ import Paper from "@mui/material/Paper";
 import { MessageBubble } from "../components/Message";
 import supabase from "../services/supabase";
 import { TextInput } from "../components/Input";
+
 interface MessageProps {
 	message?: string;
 	user?: string;
 }
+
 const App = () => {
 	const searchParams = new URLSearchParams(document.location.search);
 	const user = searchParams.get("user");
